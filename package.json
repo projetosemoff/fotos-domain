@@ -3,7 +3,8 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "vitest run",
+		"test:watch": "vitest",
 		"lint:format": "npx @biomejs/biome format --write ./src/*"
 	},
 	"engines": {
@@ -17,6 +18,8 @@
 		"@biomejs/biome": "1.9.3",
 		"@faker-js/faker": "^9.0.3",
 		"@types/node": "^22.7.4",
-		"typescript": "^5.6.2"
+		"typescript": "^5.6.2",
+		"vite-tsconfig-paths": "^5.0.1",
+		"vitest": "^2.1.2"
 	}
 }
