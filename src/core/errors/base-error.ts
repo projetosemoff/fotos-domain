@@ -1,4 +1,4 @@
 export interface BaseError {
-  message: string;
-  id?: number;
+	message: string;
+	id?: number;
 }

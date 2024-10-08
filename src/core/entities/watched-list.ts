@@ -27,21 +27,18 @@ export abstract class WatchedList<T> {
 
 	private isCurrentItem(item: T): boolean {
 		return (
-			this.currentItems.filter((v: T) => this.compareItems(item, v))
-				.length !== 0
+			this.currentItems.filter((v: T) => this.compareItems(item, v)).length !==
+			0
 		);
 	}
 
 	private isNewItem(item: T): boolean {
-		return (
-			this.new.filter((v: T) => this.compareItems(item, v)).length !== 0
-		);
+		return this.new.filter((v: T) => this.compareItems(item, v)).length !== 0;
 	}
 
 	private isRemovedItem(item: T): boolean {
 		return (
-			this.removed.filter((v: T) => this.compareItems(item, v)).length !==
-			0
+			this.removed.filter((v: T) => this.compareItems(item, v)).length !== 0
 		);
 	}
 
@@ -61,8 +58,7 @@ export abstract class WatchedList<T> {
 
 	private wasAddedInitially(item: T): boolean {
 		return (
-			this.initial.filter((v: T) => this.compareItems(item, v)).length !==
-			0
+			this.initial.filter((v: T) => this.compareItems(item, v)).length !== 0
 		);
 	}
 
