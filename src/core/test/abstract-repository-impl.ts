@@ -1,5 +1,5 @@
 import type { EntityID } from "../entities/entity-id";
-import type { PaginationParams } from "./pagination-params";
+import type { PaginationParams } from "../repositories/pagination-params";
 
 export interface AbstractRepositoryImplProps {
 	id: EntityID;
