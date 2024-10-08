@@ -1,6 +1,6 @@
 import { left, right, type Either } from "@/core/either";
 import { Photographer } from "../../enterprise/entities/photographer";
-import { PhotographerAlreadyExistsError } from "../../errors/photographer-already-exists";
+import { PhotographerAlreadyExistsError } from "../errors/photographer-already-exists";
 import type { PhotographerRepository } from "../repositories/photographer-repository";
 import type { HashGenerator } from "@/core/cryptography/hash-generator";
 
