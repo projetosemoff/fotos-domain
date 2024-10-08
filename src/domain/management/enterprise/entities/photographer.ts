@@ -5,6 +5,7 @@ import type { Optional } from "@/core/types/optional";
 interface PhotographerProps {
 	name: string;
 	email: string;
+	password: string;
 	createdAt: Date;
 	updatedAt?: Date;
 	inactivatedAt?: Date;
@@ -17,6 +18,10 @@ export class Photographer extends Entity<PhotographerProps> {
 
 	get email(): string {
 		return this.props.email;
+	}
+
+	get password() {
+		return this.props.password;
 	}
 
 	get createdAt(): Date {

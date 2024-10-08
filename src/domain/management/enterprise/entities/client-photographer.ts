@@ -4,6 +4,7 @@ import type { Optional } from "@/core/types/optional";
 
 interface ClientPhotographerProps {
 	photographerId: EntityID;
+	clientId: EntityID;
 	email: string;
 	createdAt: Date;
 	updatedAt?: Date;
