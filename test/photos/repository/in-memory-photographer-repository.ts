@@ -1,5 +1,5 @@
 import { AbstractRepositoryImpl } from "@/core/test/abstract-repository-impl";
-import type { Photographer } from "@/domain/management/enterprise/entities/photographer";
+import type { Photographer } from "@/domain/photos/enterprise/entities/photographer";
 
 export class InMemoryPhotographerRepository<
 	T extends Photographer,

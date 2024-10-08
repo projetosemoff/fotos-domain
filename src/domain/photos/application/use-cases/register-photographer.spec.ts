@@ -1,6 +1,6 @@
 import type { Photographer } from "../../enterprise/entities/photographer";
 import { FakeHasher } from "@/core/test/cryptography/fake-hasher";
-import { InMemoryPhotographerRepository } from "@test/management/repository/in-memory-photographer-repository";
+import { InMemoryPhotographerRepository } from "@test/photos/repository/in-memory-photographer-repository";
 import { RegisterPhotographerUseCase } from "./register-photographer";
 
 let inMemoryPhotographerRepository: InMemoryPhotographerRepository<Photographer>;
