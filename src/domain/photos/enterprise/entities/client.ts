@@ -1,6 +1,6 @@
 import { Entity } from "@/core/entities/entity";
-import type { EntityID } from "@/core/entities/entity-id";
-import type { Optional } from "@/core/types/optional";
+import { EntityID } from "@/core/entities/entity-id";
+import { Optional } from "@/core/types/optional";
 
 interface ClientProps {
   name: string;
